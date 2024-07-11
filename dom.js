@@ -1,24 +1,40 @@
 const test = document.getElementById('test');
+test.innerText = "My Name is Engineer Tony!";
 
-test.innerText = "My Name is Engenner Tony!";
-
-//creating new elements;
+// Creating new elements
 const newItem = document.createElement("h1");
 const headingTitle = document.createTextNode("This is heading title");
 
 newItem.appendChild(headingTitle);
 
-//adding new element to the DOM
-const prinToDom = document.getElementById('newElement');
-prinToDom.appendChild(newItem);
+// Adding new element to the DOM
+const printToDom1 = document.getElementById('newElement');
+printToDom1.appendChild(newItem);
 
-//ASSIGMENTS
-// Create a new element that prints out yourfavourite dish, pets, colours
+// ASSIGNMENTS
+// Create a new element that prints out your favourite dish
+const favouriteDish = document.createElement('h2');
+const dishHeading = document.createTextNode("This is my favourite dish: Pilau");
+favouriteDish.appendChild(dishHeading);
 
-const favourite_dish = document.createElement('h1');
-const dish_heading = document.createTextNode("This is my favourite");
+// Adding favourite dish to the DOM
+const printToDom2 = document.getElementById('favouriteDish');
+printToDom2.appendChild(favouriteDish);
 
-newItem.appendChild(dish_heading);
+// Create a new element that prints out your favourite pet
+const favouritePet = document.createElement('h4');
+const petName = document.createTextNode('My favourite pet is a Dog');
+favouritePet.appendChild(petName);
 
-const printToDom = document.getElementById('nito');
-printToDom.appendChild(newItem);
+// Adding favourite pet to the DOM
+const printToDom3 = document.getElementById('favouritePet');
+printToDom3.appendChild(favouritePet);
+
+// Create a new element that prints out your favourite colours
+const favouriteColors = document.createElement('h3');
+const colorNames = document.createTextNode('My favourite colours are Blue and Green');
+favouriteColors.appendChild(colorNames);
+
+// Adding favourite colours to the DOM
+const printToDom4 = document.getElementById('favouriteColors');
+printToDom4.appendChild(favouriteColors);
